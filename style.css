@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light: #f5e5e1;
+    --pink: #e7c5bb;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--light);
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #6d3526;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #6d3526;
+    font-weight: light;
+}
+
+.logo {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+
+}
+
+.hero {
+    width: 100%;
+    min-height: 90vh;
+    /* يعطي القسم ارتفاعاً مناسباً لعرض الخلفية */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 30px;
+    flex-direction: column;
+    gap: 3rem;
+    border-bottom: 1px solid #6d3526;
+    /* إضافة صورة الخلفية مع طبقة شفافة داكنة ليكون النص واضحاً */
+    background: linear-gradient(rgba(245, 229, 225, 0.99), rgba(245, 229, 225, 0.5)),
+        url('images/1.jpg') no-repeat center center/cover;
+
+}
+
+.part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* تنسيق النص داخل قسم الهيرو */
+.hero h1 {
+    color: #6d3526;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(122, 88, 88, 0.402);
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.next {
+    border: 2px solid #6d3526;
+    background: transparent;
+    border-radius: 50px;
+    color: #6d3526;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    width: 10%;
+    text-shadow: 2px 2px 8px rgba(122, 88, 88, 0.402);
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.3s;
+}
+.next:hover{
+background: #6d3526;
+color: var(--light);
+}
+.part p {
+    font-size: 1rem;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.after {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 10%;
+    background-color: transparent; /* خلفية بيضاء لكسر لون الهيرو وإعطاء تباين جميل */
+    gap: 20px;
+}
+.cards{
+display: flex;
+}
+.feature-card {
+    text-align: center;
+    max-width: 280px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* تأثير حركة ناعم عند مرور الماوس */
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 2.2rem;
+    border: 1px solid #6d3526;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: #6d3526; /* لون بني دافئ متناسق مع تصميمك */
+    margin-bottom: 15px;
+    /* إضافات بسيطة لتوسيط الأيقونة تماماً دون تغيير باقي خصائصك */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;  /* لتكون الدائرة متناسبة ومضبوطة */
+    height: 60px;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    color: #6d3526;
+    margin-bottom: 8px;
+ /* أو الخط الرئيسي الذي اخترته */
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+}
+
+/*=====================*/
+
+.gallery {
+    padding: 4rem 10%;
+    background-color: #f5e5e1; /* مطابقة للون خلفية الهيرو المفضل لديك */
+}
+
+.gallery-container {
+    display: flex;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px; /* ارتفاع مناسب للقسم */
+}
+
+/* العنصر الأكبر يأخذ نسبة 1.618 تقريباً مقارنة بالعمود الجانبي */
+.gallery-item.large {
+    flex: 1.618;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid #6d3526;
+}
+
+.gallery-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.gallery-item.small {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid #6d3526;
+}
+
+/* تنسيق الصور والـ Overlay الناعم */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* تكبير خفيف وأنيق عند Hover */
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    inset: 0;
+  /*  background: linear-gradient(to top,rgba(245, 229, 225, 0.99), transparent);*/
+   background: linear-gradient(/*to top,*/ rgba(245, 229, 225, 0.3), rgba(58, 35, 33, 0.777));
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    color: #fff;
+    font-family: 'Lora', serif;
+    
+}
+
+.gallery-item .overlay h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
