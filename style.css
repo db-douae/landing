@@ -65,7 +65,7 @@ header a {
     gap: 3rem;
     border-bottom: 1px solid #6d3526;
     /* إضافة صورة الخلفية مع طبقة شفافة داكنة ليكون النص واضحاً */
-    background: linear-gradient(rgba(245, 229, 225, 0.99), rgba(245, 229, 225, 0.5)),
+    background: linear-gradient(rgba(245, 229, 225, 0.99), rgba(245, 229, 225, 0.2)),
         url('images/1.jpg') no-repeat center center/cover;
 
 }
@@ -128,7 +128,7 @@ display: flex;
 }
 .feature-card {
     text-align: center;
-    max-width: 280px;
+    width: 20%; /*280px*/
     padding: 20px;
     transition: transform 0.3s ease;
 }
@@ -219,18 +219,69 @@ display: flex;
 
 .gallery-item .overlay {
     position: absolute;
+    
     inset: 0;
   /*  background: linear-gradient(to top,rgba(245, 229, 225, 0.99), transparent);*/
-   background: linear-gradient(/*to top,*/ rgba(245, 229, 225, 0.3), rgba(58, 35, 33, 0.777));
+   background: linear-gradient(/*to top,*/ rgba(58, 35, 33, 0.777), rgba(245, 229, 225, 0.3));
     display: flex;
     align-items: flex-end;
     padding: 1.5rem;
     color: #fff;
+    transition: 0.3s;
     font-family: 'Lora', serif;
+    flex-direction: column;
     
 }
+
 
 .gallery-item .overlay h3 {
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+.openions {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.openions h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.openions-card {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.openion {
+    background-color: #ffffff;
+    border: 1px solid #6d3526;
+    border-radius: 3px;
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.stars {
+    color: #6d3526;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.openion p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.openion span {
+    font-size: 13px;
+    color: #666666;
+    font-weight: bold;
+    display: block;
 }
