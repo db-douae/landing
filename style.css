@@ -285,3 +285,28 @@ display: flex;
     font-weight: bold;
     display: block;
 }
+
+.order{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f8eeeb;
+    border: 1px solid #6d3526;
+    margin-bottom: 50px ;
+}
+
+.order a{
+    text-decoration: none;
+    font-size: larger;
+    margin: 2rem;
+    padding: 1rem 2rem;
+     background: #6d3526;
+     color: #fff;
+     border-radius: 50px;
+}
+.order a i{
+    padding: 0 1rem;
+}
