@@ -5,7 +5,9 @@
 }
 
 :root {
-    --light: #f8eeeb /*#f5e5e1*/;
+    --light: #f8eeeb
+        /*#f5e5e1*/
+    ;
     --pink: #e7c5bb;
 }
 
@@ -23,23 +25,23 @@ body {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #472319 ;
+    color: #472319;
 }
 
-.link{
-   width: 100%;
+.link {
+    width: 100%;
     display: flex;
     justify-content: center;
     letter-spacing: 2px;
     align-items: center;
     height: 25px;
     background-color: transparent;
-    background: #472319; 
+    background: #472319;
     color: var(--light);
-    
+
 }
 
-.link p a{
+.link p a {
     text-decoration: none;
     color: var(--light);
 }
@@ -66,7 +68,7 @@ header a {
     font-weight: 500;
 }
 
-header a:hover{
+header a:hover {
     color: #472319;
 }
 
@@ -82,7 +84,6 @@ header a:hover{
 .hero {
     width: 100%;
     min-height: 90vh;
-    /* يعطي القسم ارتفاعاً مناسباً لعرض الخلفية */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,9 +92,9 @@ header a:hover{
     flex-direction: column;
     gap: 3rem;
     border-bottom: 1px solid #6d3526;
-    /* إضافة صورة الخلفية مع طبقة شفافة داكنة ليكون النص واضحاً */
     background: linear-gradient(#f8eeebfc, #f8eeeb5b),
         url('images/1.jpg') no-repeat center center/cover;
+    transition: 0.3s;
 
 }
 
@@ -104,7 +105,6 @@ header a:hover{
     flex-direction: column;
 }
 
-/* تنسيق النص داخل قسم الهيرو */
 .hero h1 {
     color: #6d3526;
     font-size: 4rem;
@@ -128,9 +128,10 @@ header a:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
     transition: 0.3s;
 }
-.next:hover{
-background: #6d3526;
-color: var(--light);
+
+.next:hover {
+    background: #6d3526;
+    color: var(--light);
 }
 
 .part p {
@@ -139,32 +140,35 @@ color: var(--light);
     justify-self: center;
 }
 
-h2{
+h2 {
     color: #6d3526;
     letter-spacing: 1px;
 }
+
 .after {
-    
+
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
-    background-color: transparent; /* خلفية بيضاء لكسر لون الهيرو وإعطاء تباين جميل */
+    background-color: transparent;
     gap: 20px;
 }
-.cards{
-display: flex;
+
+.cards {
+    display: flex;
 }
+
 .feature-card {
     text-align: center;
-    width: 20%; /*280px*/
+    width: 20%;
+    /*280px*/
     padding: 20px;
     transition: transform 0.3s ease;
 }
 
-/* تأثير حركة ناعم عند مرور الماوس */
 .feature-card:hover {
     transform: translateY(-5px);
 }
@@ -174,13 +178,12 @@ display: flex;
     border: 1px solid #6d3526;
     padding: 0.5rem;
     border-radius: 50%;
-    color: #6d3526; /* لون بني دافئ متناسق مع تصميمك */
+    color: #6d3526;
     margin-bottom: 15px;
-    /* إضافات بسيطة لتوسيط الأيقونة تماماً دون تغيير باقي خصائصك */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 60px;  /* لتكون الدائرة متناسبة ومضبوطة */
+    width: 60px;
     height: 60px;
 }
 
@@ -188,7 +191,7 @@ display: flex;
     font-size: 1.2rem;
     color: #6d3526;
     margin-bottom: 8px;
- /* أو الخط الرئيسي الذي اخترته */
+    /* أو الخط الرئيسي الذي اخترته */
 }
 
 .feature-card p {
@@ -206,10 +209,10 @@ display: flex;
     flex-direction: column;
     min-height: 100vh;
     padding: 4rem 10%;
-    background-color: var(--light); /* مطابقة للون خلفية الهيرو المفضل لديك */
+    background-color: var(--light);
 }
 
-.gallery h2{
+.gallery h2 {
     margin-bottom: 30px;
 }
 
@@ -218,10 +221,9 @@ display: flex;
     gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
-    height: 500px; /* ارتفاع مناسب للقسم */
+    height: 500px;
 }
 
-/* العنصر الأكبر يأخذ نسبة 1.618 تقريباً مقارنة بالعمود الجانبي */
 .gallery-item.large {
     flex: 1.618;
     position: relative;
@@ -247,7 +249,6 @@ display: flex;
     box-shadow: 2px 2px 8px rgba(122, 88, 88, 0.2);
 }
 
-/* تنسيق الصور والـ Overlay الناعم */
 .gallery-item img {
     width: 100%;
     height: 100%;
@@ -256,15 +257,13 @@ display: flex;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05); /* تكبير خفيف وأنيق عند Hover */
+    transform: scale(1.05);
 }
 
 .gallery-item .overlay {
     position: absolute;
-    
     inset: 0;
-  /*  background: linear-gradient(to top,rgba(245, 229, 225, 0.99), transparent);*/
-   background: linear-gradient(/*to top,*/ rgba(58, 35, 33, 0.777), rgba(245, 229, 225, 0.3));
+    background: linear-gradient(rgba(58, 35, 33, 0.777), rgba(245, 229, 225, 0.3));
     display: flex;
     align-items: flex-end;
     padding: 1.5rem;
@@ -272,7 +271,7 @@ display: flex;
     transition: 0.3s;
     font-family: 'Lora', serif;
     flex-direction: column;
-    
+
 }
 
 
@@ -291,7 +290,7 @@ display: flex;
 .openions {
     padding: 40px 20px;
     text-align: center;
-    margin-bottom: 50px ;
+    margin-bottom: 50px;
 }
 
 .openions h2 {
@@ -304,7 +303,7 @@ display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    
+
 }
 
 .openion {
@@ -315,8 +314,7 @@ display: flex;
     width: 30%;
     text-align: left;
     box-sizing: border-box;
-  /*  box-shadow: 2px 2px 8px rgba(122, 88, 88, 0.2);*/
-    
+
 }
 
 .stars {
@@ -341,8 +339,8 @@ display: flex;
     display: block;
 }
 
-.order{
-    margin-top: 50px ;
+.order {
+    margin-top: 50px;
     min-height: 60vh;
     width: 100%;
     display: flex;
@@ -352,32 +350,288 @@ display: flex;
     background: #fdfaf9;
     border: 1px solid #6d3526;
     border-left: none;
-    border-right: none ;
-    margin-bottom: 50px ;
+    border-right: none;
+    margin-bottom: 50px;
 }
 
-.order a{
+.order a {
     text-decoration: none;
     font-size: larger;
     margin: 2rem;
     padding: 1rem 2rem;
-     background: #6d3526;
-     color: #fff;
-     border-radius: 50px;
-     transition: 0.3s;
+    background: #6d3526;
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.3s;
 }
-.order a i{
+
+.order a i {
     padding: 0 1rem;
 }
 
 
-.order a:hover{
+.order a:hover {
     padding: 1rem 2.5rem;
     background: #472319;
-    
+
 }
 
-footer p{
+footer p {
     font-size: smaller;
     color: #47231978;
+}
+
+/*mini laptop*/
+@media (max-width: 992px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-card {
+        width: 30%;
+    }
+
+    .gallery {
+        padding: 3rem 5%;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .next {
+        width: auto;
+        min-width: 140px;
+    }
+}
+
+/**/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .feature-card {
+        width: 45%;
+    }
+
+    .gallery {
+        min-height: auto;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .gallery-item.large {
+        flex: none;
+        height: 320px;
+    }
+
+    .gallery-column {
+        flex-direction: row;
+        flex: none;
+    }
+
+    .gallery-item.small {
+        height: 220px;
+    }
+
+    .openion {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .order {
+        padding: 30px 20px;
+        text-align: center;
+    }
+}
+
+/*Phone*/
+@media (max-width:480px) {
+    .link {
+        font-size: 0.8rem;
+        height: auto;
+        min-height: 25px;
+        padding: 3px 10px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    header nav ul {
+        gap: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        gap: 2rem;
+    }
+
+    .next {
+        font-size: 1.1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .gallery {
+        padding: 2rem 5%;
+    }
+
+    .gallery-column {
+        flex-direction: column;
+    }
+
+    .gallery-item.large,
+    .gallery-item.small {
+        font-size: 1.1rem;
+    }
+
+    .gallery-item .overlay h3 {
+        font-size: 1.1rem;
+    }
+
+    .order a {
+        display: inline-block;
+        font-size: 0.9rem;
+        padding: 0.8rem 1.2rem;
+        margin: 1.5rem 0;
+
+    }
+
+    .order a:hover {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .order a i {
+        padding: 0 0.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 100%;
+    }
+
+    .feature-card {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .feature-card:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .after {
+        padding: 20px 10px;
+    }
+
+    .cards {
+        gap: 10px;
+    }
+
+    .feature-card i {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1rem;
+    }
+
+    .feature-card p {
+        font-size: 0.8rem;
+    }
+
+    .feature-card:last-child {
+        width: 60%;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #6d3526;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--light);
+        border-bottom: 1px solid #6d3526;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 100;
+    }
+
+    header nav.open {
+        max-height: 320px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul a {
+        display: block;
+        padding: 14px;
+    }
 }

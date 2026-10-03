@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <!---->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Patisserie</title>
+    <link rel="icon" type="image/png" href="logo.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,12 +25,12 @@
         <p id="text-animation"></p>
     </div>
     <header>
-        <!-- اللوجو أو اسم الموقع -->
         <div class="logo">
             Patisserie
         </div>
-
-        <!-- قائمة التنقل الرئيسية -->
+        <button class="menu-toggle" aria-label="القائمة" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
@@ -48,7 +48,8 @@
             <p>if you need sweets made for special occasions.</p>
         </div>
 
-        <button class="next" onclick="window.location.href='index.html#about'" >NEXT <i class="fa-solid fa-chevron-down"></i></button>
+        <button class="next" onclick="window.location.href='index.html#about'">NEXT <i
+                class="fa-solid fa-chevron-down"></i></button>
     </section>
     <section class="after" id="about">
         <div class="cards">
@@ -98,7 +99,6 @@
     <section class="gallery" id="menu">
         <h2>PATISSERIE MENU</h2>
         <div class="gallery-container">
-            <!-- الصورة الأولى: الصورة الكبيرة (تأخذ المساحة الأكبر 1.618) -->
             <div class="gallery-item large">
                 <img src="images/16.webp" alt="Signature Cakes">
                 <div class="overlay">
@@ -108,7 +108,6 @@
                 </div>
             </div>
 
-            <!-- العمود الجانبي الذي يحتوي على الصورتين الأصغر -->
             <div class="gallery-column">
                 <div class="gallery-item small">
                     <img src="images/3.webp" alt="French Pastries">
@@ -150,13 +149,14 @@
             </div>
         </div>
     </section>
-    
+
 
     <section class="order" id="contact">
         <h2>PLACE YOUR ORDER NOW</h2>
         <br>
         <p>Contact us via WhatsApp to order dessert, and we'll get back to you as soon as possible.</p>
-        <a href="#"><i class="fa-solid fa-chevron-right"></i> CONTACT US FROM WHATSAPP <i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-solid fa-chevron-right"></i> CONTACT US FROM WHATSAPP <i
+                class="fa-brands fa-whatsapp"></i></a>
         <div class="logo">
             Patisserie
         </div>
@@ -168,23 +168,26 @@
             <div class="openion">
                 <div class="stars">5 ★</div>
                 <p>“ I ordered a cake from them for a special occasion,
-                     and it was a real showstopper.. it looked absolutely perfect, and the taste was just right, not too sweet.
-                      It was 100% perfect. ”
-                    </p>
+                    and it was a real showstopper.. it looked absolutely perfect, and the taste was just right, not too
+                    sweet.
+                    It was 100% perfect. ”
+                </p>
                 <span>- Sarah Mohammed</span>
             </div>
-            
+
             <div class="openion">
                 <div class="stars">5 ★</div>
-                <p>“ It's one of the best shops I've tried, their croissants are fresh and flaky, and they use just the right amount of butter. ”
-                    </p>
+                <p>“ It's one of the best shops I've tried, their croissants are fresh and flaky, and they use just the
+                    right amount of butter. ”
+                </p>
                 <span>- Ahmed Khaled</span>
             </div>
 
             <div class="openion">
                 <div class="stars">5 ★</div>
-                <p>“ A classy place with fast service. Their lemon tart and macarons are addictive, and their coffee is excellent with the desserts. ”
-                    </p>
+                <p>“ A classy place with fast service. Their lemon tart and macarons are addictive, and their coffee is
+                    excellent with the desserts. ”
+                </p>
                 <span>- Omar Amir</span>
             </div>
 
