@@ -20,7 +20,24 @@ body {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #6d3526;
+    color: #6d3526 ;
+}
+
+.link{
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    align-items: center;
+    height: 25px;
+    background-color: transparent;
+    background: #472319; 
+    color: var(--light);
+    
+}
+.link p a{
+    text-decoration: none;
+    color: var(--light);
 }
 
 header {
@@ -119,7 +136,7 @@ color: var(--light);
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px 10%;
+    padding: 30px;
     background-color: transparent; /* خلفية بيضاء لكسر لون الهيرو وإعطاء تباين جميل */
     gap: 20px;
 }
@@ -169,8 +186,17 @@ display: flex;
 /*=====================*/
 
 .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
     padding: 4rem 10%;
     background-color: #f5e5e1; /* مطابقة للون خلفية الهيرو المفضل لديك */
+}
+
+.gallery h2{
+    margin-bottom: 30px;
 }
 
 .gallery-container {
@@ -270,6 +296,7 @@ display: flex;
     color: #6d3526;
     font-size: 16px;
     margin-bottom: 10px;
+
 }
 
 .openion p {
@@ -277,6 +304,7 @@ display: flex;
     color: #333333;
     line-height: 1.5;
     margin-bottom: 15px;
+    font-style: italic;
 }
 
 .openion span {
@@ -287,7 +315,7 @@ display: flex;
 }
 
 .order{
-    min-height: 90vh;
+    min-height: 70vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -295,6 +323,8 @@ display: flex;
     flex-direction: column;
     background: #f8eeeb;
     border: 1px solid #6d3526;
+    border-left: none;
+    border-right: none ;
     margin-bottom: 50px ;
 }
 
