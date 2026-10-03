@@ -15,6 +15,11 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -93,7 +98,7 @@ header a:hover {
     gap: 3rem;
     border-bottom: 1px solid #6d3526;
     background: linear-gradient(#f8eeebfc, #f8eeeb5b),
-        url('images/1.jpg') no-repeat center center/cover;
+        url('images/1.webp') no-repeat center center/cover;
     transition: 0.3s;
 
 }
