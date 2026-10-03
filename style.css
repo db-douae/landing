@@ -5,7 +5,7 @@
 }
 
 :root {
-    --light: #f5e5e1;
+    --light: #f8eeeb /*#f5e5e1*/;
     --pink: #e7c5bb;
 }
 
@@ -76,7 +76,7 @@ header a:hover{
     font-style: normal;
     font-size: 2rem;
     height: 2rem;
-
+    color: #6d3526;
 }
 
 .hero {
@@ -92,7 +92,7 @@ header a:hover{
     gap: 3rem;
     border-bottom: 1px solid #6d3526;
     /* إضافة صورة الخلفية مع طبقة شفافة داكنة ليكون النص واضحاً */
-    background: linear-gradient(rgba(245, 229, 225, 0.99), rgba(245, 229, 225, 0.2)),
+    background: linear-gradient(#f8eeebfc, #f8eeeb5b),
         url('images/1.jpg') no-repeat center center/cover;
 
 }
@@ -132,6 +132,7 @@ header a:hover{
 background: #6d3526;
 color: var(--light);
 }
+
 .part p {
     font-size: 1rem;
     align-self: center;
@@ -140,6 +141,7 @@ color: var(--light);
 
 h2{
     color: #6d3526;
+    letter-spacing: 1px;
 }
 .after {
     
@@ -204,7 +206,7 @@ display: flex;
     flex-direction: column;
     min-height: 100vh;
     padding: 4rem 10%;
-    background-color: #f5e5e1; /* مطابقة للون خلفية الهيرو المفضل لديك */
+    background-color: var(--light); /* مطابقة للون خلفية الهيرو المفضل لديك */
 }
 
 .gallery h2{
@@ -341,13 +343,13 @@ display: flex;
 
 .order{
     margin-top: 50px ;
-    min-height: 80vh;
+    min-height: 60vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #f8eeeb;
+    background: #fdfaf9;
     border: 1px solid #6d3526;
     border-left: none;
     border-right: none ;
@@ -377,4 +379,5 @@ display: flex;
 
 footer p{
     font-size: smaller;
+    color: #47231978;
 }
