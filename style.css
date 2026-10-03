@@ -231,6 +231,7 @@ h2 {
 
 .gallery-item {
     background: var(--pink);
+    border: 1px solid #6d3526;
     overflow: hidden;
 }
 
@@ -239,7 +240,6 @@ h2 {
     position: relative;
     overflow: hidden;
     border-radius: 5px;
-    border: 1px solid #6d3526;
     box-shadow: 2px 2px 8px rgba(122, 88, 88, 0.2);
 }
 
@@ -255,7 +255,6 @@ h2 {
     position: relative;
     overflow: hidden;
     border-radius: 5px;
-    border: 1px solid #6d3526;
     box-shadow: 2px 2px 8px rgba(122, 88, 88, 0.2);
 }
 
