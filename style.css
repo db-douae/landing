@@ -463,8 +463,10 @@ footer p {
     }
 
     .gallery-item.small {
+        display: flex;
         height: 220px;
     }
+
 
     .openion {
         width: 100%;
