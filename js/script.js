@@ -8,10 +8,9 @@ let text = new Typed('#text-animation',{
 });
 
 let text2 = new Typed('#text',{
-    strings : [`Contact us via WhatsApp to order dessert, and we'll get back to you as soon as possible.`],
-    typeSpeed: 50,
+    strings : [`Patisserie`],
+    typeSpeed: 100,
     loop: true,
     smartBackspace: false,
-    showCursor: true,
-    cursorChar: '|' 
+    showCursor: false,
 });

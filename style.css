@@ -9,6 +9,9 @@
     --pink: #e7c5bb;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     display: flex;
@@ -20,7 +23,7 @@ body {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #6d3526 ;
+    color: #472319 ;
 }
 
 .link{
@@ -60,6 +63,7 @@ header a {
     text-decoration: none;
     color: #6d3526;
     font-weight: light;
+    font-weight: 500;
 }
 
 header a:hover{
@@ -71,6 +75,7 @@ header a:hover{
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
+    height: 2rem;
 
 }
 
@@ -133,7 +138,9 @@ color: var(--light);
     justify-self: center;
 }
 
-
+h2{
+    color: #6d3526;
+}
 .after {
     
     width: 100%;
@@ -184,7 +191,7 @@ display: flex;
 
 .feature-card p {
     font-size: 0.9rem;
-
+    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -217,8 +224,9 @@ display: flex;
     flex: 1.618;
     position: relative;
     overflow: hidden;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid #6d3526;
+    box-shadow: 2px 2px 8px rgba(122, 88, 88, 0.2);
 }
 
 .gallery-column {
@@ -232,8 +240,9 @@ display: flex;
     flex: 1;
     position: relative;
     overflow: hidden;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid #6d3526;
+    box-shadow: 2px 2px 8px rgba(122, 88, 88, 0.2);
 }
 
 /* تنسيق الصور والـ Overlay الناعم */
@@ -280,6 +289,7 @@ display: flex;
 .openions {
     padding: 40px 20px;
     text-align: center;
+    margin-bottom: 50px ;
 }
 
 .openions h2 {
@@ -292,16 +302,19 @@ display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .openion {
     background-color: #ffffff;
     border: 1px solid #6d3526;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 20px;
     width: 30%;
     text-align: left;
     box-sizing: border-box;
+  /*  box-shadow: 2px 2px 8px rgba(122, 88, 88, 0.2);*/
+    
 }
 
 .stars {
@@ -327,7 +340,8 @@ display: flex;
 }
 
 .order{
-    min-height: 70vh;
+    margin-top: 50px ;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -358,6 +372,7 @@ display: flex;
 .order a:hover{
     padding: 1rem 2.5rem;
     background: #472319;
+    
 }
 
 footer p{
