@@ -464,7 +464,7 @@ footer p {
 
     .gallery-item.small {
         display: flex;
-        max-height: 350px;
+        height: auto;
     }
 
 
