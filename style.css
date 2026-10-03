@@ -464,7 +464,7 @@ footer p {
 
     .gallery-item.small {
         display: flex;
-        height: 220px;
+        max-height: 350px;
     }
 
 
@@ -530,6 +530,7 @@ footer p {
     .gallery-item.large,
     .gallery-item.small {
         font-size: 1.1rem;
+
     }
 
     .gallery-item .overlay h3 {
