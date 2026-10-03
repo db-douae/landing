@@ -519,6 +519,14 @@ footer p {
         flex-direction: column;
     }
 
+    .gallery-item img {
+        max-height: 100%;
+        width: 100% ;
+        padding: 0;
+        margin: 0;
+
+    }
+
     .gallery-item.large,
     .gallery-item.small {
         font-size: 1.1rem;
