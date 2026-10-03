@@ -35,6 +35,7 @@ body {
     color: var(--light);
     
 }
+
 .link p a{
     text-decoration: none;
     color: var(--light);
@@ -59,6 +60,10 @@ header a {
     text-decoration: none;
     color: #6d3526;
     font-weight: light;
+}
+
+header a:hover{
+    color: #472319;
 }
 
 .logo {
@@ -263,6 +268,13 @@ display: flex;
 .gallery-item .overlay h3 {
     font-size: 1.4rem;
     font-weight: 500;
+    text-shadow: 2px 2px 8px rgba(122, 88, 88, 0.9);
+}
+
+.gallery-item .overlay p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 8px rgba(69, 50, 50, 0.9);
 }
 
 .openions {
@@ -336,7 +348,18 @@ display: flex;
      background: #6d3526;
      color: #fff;
      border-radius: 50px;
+     transition: 0.3s;
 }
 .order a i{
     padding: 0 1rem;
+}
+
+
+.order a:hover{
+    padding: 1rem 2.5rem;
+    background: #472319;
+}
+
+footer p{
+    font-size: smaller;
 }

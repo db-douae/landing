@@ -22,7 +22,7 @@
 
 <body>
     <div class="link">
-        <p>Contact us via <a href="#">WhatsApp</a> to order dessert</p>
+        <p id="text-animation"></p>
     </div>
     <header>
         <!-- اللوجو أو اسم الموقع -->
@@ -33,16 +33,16 @@
         <!-- قائمة التنقل الرئيسية -->
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">REVIEWS</a></li>
-                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#reviews">REVIEWS</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="part">
             <h1>We offer you The most delicious sweets.</h1>
             <p>if you need sweets made for special occasions.</p>
@@ -50,7 +50,7 @@
 
         <button class="next">NEXT <i class="fa-solid fa-chevron-down"></i></button>
     </section>
-    <section class="after">
+    <section class="after" id="about">
         <div class="cards">
 
             <div class="feature-card">
@@ -95,56 +95,56 @@
         </div>
 
     </section>
-    <section class="gallery">
+    <section class="gallery" id="menu">
         <h2>Patisserie Menu</h2>
         <div class="gallery-container">
             <!-- الصورة الأولى: الصورة الكبيرة (تأخذ المساحة الأكبر 1.618) -->
             <div class="gallery-item large">
-                <img src="images/6.jpg" alt="Signature Cakes">
+                <img src="images/16.jpg" alt="Signature Cakes">
                 <div class="overlay">
-                    <h3>Custom Cakes</h3>
+                    <h3>Wedding & Event Cake</h3>
                     <br>
-                    <p>1300DA</p>
+                    <p>4500DA</p>
                 </div>
             </div>
 
             <!-- العمود الجانبي الذي يحتوي على الصورتين الأصغر -->
             <div class="gallery-column">
                 <div class="gallery-item small">
-                    <img src="images/1.jpg" alt="French Pastries">
+                    <img src="images/3.jpg" alt="French Pastries">
                     <div class="overlay">
-                        <h3>Custom Cakes</h3>
+                        <h3>Chocolate Cupcakes</h3>
                         <br>
-                        <p>1300DA</p>
+                        <p>800DA</p>
                     </div>
                 </div>
 
                 <div class="gallery-item small">
-                    <img src="images/2.jpg" alt="Artisan Tarts">
+                    <img src="images/4.jpg" alt="Artisan Tarts">
                     <div class="overlay">
-                        <h3>Custom Cakes</h3>
+                        <h3>Blueberry Layer Cake</h3>
                         <br>
-                        <p>1300DA</p>
+                        <p>1800DA</p>
                     </div>
                 </div>
             </div>
 
             <div class="gallery-column">
                 <div class="gallery-item small">
-                    <img src="images/1.jpg" alt="French Pastries">
+                    <img src="images/15.jpg" alt="French Pastries">
                     <div class="overlay">
-                        <h3>Custom Cakes</h3>
+                        <h3>Cake Slices Combo</h3>
                         <br>
-                        <p>1300DA</p>
+                        <p>1200DA</p>
                     </div>
                 </div>
 
                 <div class="gallery-item small">
-                    <img src="images/2.jpg" alt="Artisan Tarts">
+                    <img src="images/11.jpg" alt="Artisan Tarts">
                     <div class="overlay">
-                        <h3>Custom Cakes</h3>
+                        <h3>Happy Birthday Cake</h3>
                         <br>
-                        <p>1300DA</p>
+                        <p>2500DA</p>
                     </div>
                 </div>
             </div>
@@ -152,8 +152,8 @@
     </section>
     
 
-    <section class="order">
-        <h2>Place Your Order Now</h2>
+    <section class="order" id="contact">
+        <h2>PLACE YOUR ORDER NOW</h2>
         <br>
         <p>Contact us via WhatsApp to order dessert, and we'll get back to you as soon as possible.</p>
         <a href="#"><i class="fa-solid fa-chevron-right"></i> CONTACT US FROM WHATSAPP <i class="fa-brands fa-whatsapp"></i></a>
@@ -162,7 +162,7 @@
         </div>
     </section>
 
-    <section class="openions">
+    <section class="openions" id="reviews">
         <h2>What Our Guests Say</h2>
         <div class="openions-card">
             <div class="openion">
@@ -193,10 +193,13 @@
     </section>
 
     <footer>
-        <p> <i>NOTE: this is a Mock Up web landing page</i></p>
+        <p> <i>Concept Design & Front-End Development Demo</i></p>
         <br>
         <br>
     </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
