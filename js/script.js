@@ -1,8 +1,7 @@
-  document.documentElement.classList.add('js');
 
 if (window.Typed) {
   new Typed('#text-animation', { 
-    strings: ['Contact us via <a href="#">WhatsApp</a> to order dessert'],
+    strings: ['Contact us via <a href="https://wa.me/213000000000">WhatsApp</a> to order dessert'],
     typeSpeed: 60,
     loop: true,
     smartBackspace: false,
@@ -11,9 +10,9 @@ if (window.Typed) {
    });
    new Typed('#logo', { 
     strings: ['Patisserie'],
-    typeSpeed: 60,
+    typeSpeed: 200,
     loop: true,
-    smartBackspace: false,
+    
     showCursor: false,
    });
 }
