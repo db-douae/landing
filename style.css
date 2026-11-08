@@ -32,7 +32,11 @@ body {
     font-style: normal;
     color: #472319;
 }
-main { width: 100%; } 
+
+main {
+    width: 100%;
+}
+
 .link {
     width: 100%;
     display: flex;
@@ -146,6 +150,7 @@ header a:hover {
     font-size: 1rem;
     align-self: center;
     justify-self: center;
+    margin-top: 1rem;
 }
 
 h2 {
@@ -207,7 +212,7 @@ h2 {
     font-weight: 400;
     line-height: 1.5;
     color: #e7c5bb8a;
-    
+
 
 }
 
@@ -678,21 +683,66 @@ footer p {
 
 
 .js .reveal {
-  opacity: 0;
-  translate: 0 24px;
-  transition: opacity .6s, translate .6s, transform .3s ease;
+    opacity: 0;
+    translate: 0 24px;
+    transition: opacity .6s, translate .6s, transform .3s ease;
 }
-.js .reveal.visible { opacity: 1; translate: 0 0; }
+
+.js .reveal.visible {
+    opacity: 1;
+    translate: 0 0;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  .js .reveal { opacity: 1; translate: none; transition: none; }
+    .js .reveal {
+        opacity: 1;
+        translate: none;
+        transition: none;
+    }
 }
 
-  a:focus-visible, button:focus-visible { outline: 2px solid #6d3526; outline-offset: 3px; }
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #6d3526;
+    outline-offset: 3px;
+}
 
-  footer { width: 100%; background: #472319; color: #e7c5bbcc; padding: 40px 20px 20px; text-align: center; }
-.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto 24px; }
-footer h3 { color: #e7c5bb; font-size: 1rem; letter-spacing: 1px; margin-bottom: 8px; }
-footer .logo { color: #e7c5bb; height: auto; }
-footer a { color: #e7c5bb; font-size: 1.4rem; margin: 0 8px; }
-.demo-note { font-size: .8rem; border-top: 1px solid #e7c5bb55; padding-top: 16px; }
+footer {
+    width: 100%;
+    background: #472319;
+    color: #e7c5bbcc;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto 24px;
+}
+
+footer h3 {
+    color: #e7c5bb;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+footer .logo {
+    color: #e7c5bb;
+    height: auto;
+}
+
+footer a {
+    color: #e7c5bb;
+    font-size: 1.4rem;
+    margin: 0 8px;
+}
+
+.demo-note {
+    font-size: .8rem;
+    border-top: 1px solid #e7c5bb55;
+    padding-top: 16px;
+}
