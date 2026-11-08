@@ -11,12 +11,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="images/1.webp">
-
+    <link rel="preload" as="image" href="images/1-mobile.webp" media="(max-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="images/1.webp" media="(min-width: 769px)" fetchpriority="high">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/webp" href="images/logo.webp">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400&family=Sacramento&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400&family=Sacramento&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -26,7 +28,7 @@
     </div>
     <header>
         <div class="logo">
-           Patisserie
+            Patisserie
         </div>
         <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
@@ -99,7 +101,7 @@
             <h2>PATISSERIE MENU</h2>
             <div class="gallery-container">
                 <div class="gallery-item large reveal">
-                    <img src="images/16.webp" alt="Wedding and event cake">
+                    <img src="images/16.webp" alt="Wedding and event cake" width="900" height="1350" decoding="async">
                     <div class="overlay">
                         <h3>Wedding & Event Cake</h3>
 
@@ -109,7 +111,7 @@
 
                 <div class="gallery-column">
                     <div class="gallery-item small reveal">
-                        <img src="images/3.webp" alt="Chocolate Cupcakes">
+                        <img src="images/3.webp" alt="Chocolate Cupcakes" width="900" height="596" decoding="async">
                         <div class="overlay">
                             <h3>Chocolate Cupcakes</h3>
 
@@ -118,7 +120,7 @@
                     </div>
 
                     <div class="gallery-item small reveal">
-                        <img src="images/4.webp" alt="Blueberry Layer Cake">
+                        <img src="images/4.webp" alt="Blueberry Layer Cake" width="900" height="600" decoding="async">
                         <div class="overlay">
                             <h3>Blueberry Layer Cake</h3>
 
@@ -129,7 +131,8 @@
 
                 <div class="gallery-column">
                     <div class="gallery-item small reveal">
-                        <img src="images/15.webp" alt="Cake Slices Combo" loading="lazy">
+                        <img src="images/15.webp" alt="Cake Slices Combo" loading="lazy" width="900" height="1350"
+                            decoding="async">
                         <div class="overlay">
                             <h3>Cake Slices Combo</h3>
 
@@ -138,7 +141,8 @@
                     </div>
 
                     <div class="gallery-item small reveal">
-                        <img src="images/11.webp" alt="Happy Birthday Cake" loading="lazy">
+                        <img src="images/11.webp" alt="Happy Birthday Cake" loading="lazy" width="900" height="720"
+                            decoding="async">
                         <div class="overlay">
                             <h3>Happy Birthday Cake</h3>
 
@@ -177,22 +181,23 @@
 
                 <div class="openion reveal">
                     <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-                <p>“ It's one of the best shops I've tried, their croissants are fresh and flaky, and they use just the
-                    right amount of butter. ”
-                </p>
-                <span>- Ahmed Khaled</span>
-            </div>
-
-            <div class="openion reveal">
-                        <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-                        <p>“ A classy place with fast service. Their lemon tart and macarons are addictive, and their
-                            coffee is
-                            excellent with the desserts. ”
-                        </p>
-                        <span>- Omar Amir</span>
-                    </div>
-
+                    <p>“ It's one of the best shops I've tried, their croissants are fresh and flaky, and they use just
+                        the
+                        right amount of butter. ”
+                    </p>
+                    <span>- Ahmed Khaled</span>
                 </div>
+
+                <div class="openion reveal">
+                    <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p>“ A classy place with fast service. Their lemon tart and macarons are addictive, and their
+                        coffee is
+                        excellent with the desserts. ”
+                    </p>
+                    <span>- Omar Amir</span>
+                </div>
+
+            </div>
 
         </section>
     </main>
