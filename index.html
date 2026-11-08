@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="images/1.jpg">
+    <link rel="preload" as="image" href="images/1.webp">
 
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Sacramento&display=swap" rel="stylesheet">
 
@@ -41,24 +41,24 @@
 
     <section class="hero" id="home">
         <div class="part">
-            <h1>We offer you The most delicious sweets.</h1>
-            <p>if you need sweets made for special occasions.</p>
+            <h1>WE OFFER YOU THE MOST DELICIOUS SWEETS.</h1>
+            <p>If you need sweets made for special occasions.</p>
         </div>
 
-        <button class="next" onclick="window.location.href='index.html#about'">NEXT <i
-                class="fa-solid fa-chevron-down"></i></button>
+        <a class="next" onclick="window.location.href='index.html#about'">NEXT <i
+                class="fa-solid fa-chevron-down"></i></a>
     </section>
     <section class="after" id="about">
         <div class="cards">
 
-            <div class="feature-card">
+            <div class="feature-card reveal">
 
                 <i class="fa-solid fa-bread-slice"></i>
                 <h3>Baked Goods</h3>
-                <p>Sweet Baked for Special Occasions and Coffee Time.</p>
+                <p>Freshly baked sweets for special occasions and coffee time.</p>
 
             </div>
-            <div class="feature-card">
+            <div class="feature-card reveal">
 
                 <i class="fa-solid fa-cookie-bite"></i>
                 <h3>Desserts</h3>
@@ -66,23 +66,23 @@
 
             </div>
 
-            <div class="feature-card">
+            <div class="feature-card reveal">
 
                 <i class="fa-solid fa-cake-candles"></i>
-                <h3>Cake pans</h3>
+                <h3>Cake Trays</h3>
                 <p>shapes and sizes for sharing in special occasions.</p>
 
             </div>
 
-            <div class="feature-card">
+            <div class="feature-card reveal">
 
                 <i class="fa-solid fa-bowl-food"></i>
-                <h3>Salty Foods</h3>
+                <h3>Savory Bites</h3>
                 <p>Light options, such as pastries and sandwiches.</p>
 
             </div>
 
-            <div class="feature-card">
+            <div class="feature-card reveal">
 
                 <i class="fa-solid fa-martini-glass"></i>
                 <h3>Beverages</h3>
@@ -96,50 +96,50 @@
     <section class="gallery" id="menu">
         <h2>PATISSERIE MENU</h2>
         <div class="gallery-container">
-            <div class="gallery-item large">
+            <div class="gallery-item large reveal">
                 <img src="images/16.webp" alt="Signature Cakes">
                 <div class="overlay">
                     <h3>Wedding & Event Cake</h3>
-                    <br>
+                    
                     <p>4500DA</p>
                 </div>
             </div>
 
             <div class="gallery-column">
-                <div class="gallery-item small">
+                <div class="gallery-item small reveal">
                     <img src="images/3.webp" alt="French Pastries">
                     <div class="overlay">
                         <h3>Chocolate Cupcakes</h3>
-                        <br>
+                        
                         <p>800DA</p>
                     </div>
                 </div>
 
-                <div class="gallery-item small">
+                <div class="gallery-item small reveal">
                     <img src="images/4.webp" alt="Artisan Tarts">
                     <div class="overlay">
                         <h3>Blueberry Layer Cake</h3>
-                        <br>
+                        
                         <p>1800DA</p>
                     </div>
                 </div>
             </div>
 
             <div class="gallery-column">
-                <div class="gallery-item small">
+                <div class="gallery-item small reveal">
                     <img src="images/15.webp" alt="French Pastries" loading="lazy">
                     <div class="overlay">
                         <h3>Cake Slices Combo</h3>
-                        <br>
+                        
                         <p>1200DA</p>
                     </div>
                 </div>
 
-                <div class="gallery-item small">
+                <div class="gallery-item small reveal">
                     <img src="images/11.webp" alt="Artisan Tarts" loading="lazy">
                     <div class="overlay">
                         <h3>Happy Birthday Cake</h3>
-                        <br>
+                        
                         <p>2500DA</p>
                     </div>
                 </div>
@@ -152,17 +152,18 @@
         <h2>PLACE YOUR ORDER NOW</h2>
         <br>
         <p>Contact us via WhatsApp to order dessert, and we'll get back to you as soon as possible.</p>
-        <a href="#"><i class="fa-solid fa-chevron-right"></i> CONTACT US FROM WHATSAPP <i
-                class="fa-brands fa-whatsapp"></i></a>
-        <div class="logo">
+       <a href="https://wa.me/213000000000" target="_blank" rel="noopener">
+        <i class="fa-solid fa-chevron-right"></i> CONTACT US FROM WHATSAPP <i class="fa-brands fa-whatsapp"></i>
+    </a>
+        <div class="logo" id="logo">
             Patisserie
         </div>
     </section>
 
     <section class="openions" id="reviews">
-        <h2>What Our Guests Say</h2>
+        <h2>WHAT OUR GUESTS SAY?</h2>
         <div class="openions-card">
-            <div class="openion">
+            <div class="openion reveal">
                 <div class="stars">5 ★</div>
                 <p>“ I ordered a cake from them for a special occasion,
                     and it was a real showstopper.. it looked absolutely perfect, and the taste was just right, not too
@@ -172,7 +173,7 @@
                 <span>- Sarah Mohammed</span>
             </div>
 
-            <div class="openion">
+            <div class="openion reveal"">
                 <div class="stars">5 ★</div>
                 <p>“ It's one of the best shops I've tried, their croissants are fresh and flaky, and they use just the
                     right amount of butter. ”
@@ -180,7 +181,7 @@
                 <span>- Ahmed Khaled</span>
             </div>
 
-            <div class="openion">
+            <div class="openion reveal">
                 <div class="stars">5 ★</div>
                 <p>“ A classy place with fast service. Their lemon tart and macarons are addictive, and their coffee is
                     excellent with the desserts. ”
@@ -197,7 +198,9 @@
         <br>
         <br>
     </footer>
-
+    <a class="wa-float" href="https://wa.me/213000000000" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="js/script.js"></script>
 

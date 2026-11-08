@@ -92,7 +92,7 @@ header a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
     padding: 30px;
     flex-direction: column;
     gap: 3rem;
@@ -108,16 +108,18 @@ header a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .hero h1 {
+    max-width: 25ch;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    letter-spacing: 2px;
     color: #6d3526;
-    font-size: 4rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(122, 88, 88, 0.402);
-    font-family: "Sacramento", cursive;
+    text-shadow: 2px 2px 8px rgba(122, 88, 88, 0.4);
+    font-family: 'Lora', serif;
     font-weight: 400;
-    font-style: normal;
 }
 
 .next {
@@ -160,6 +162,7 @@ h2 {
     padding: 30px;
     background-color: transparent;
     gap: 20px;
+    background: #472319;
 }
 
 .cards {
@@ -176,14 +179,15 @@ h2 {
 
 .feature-card:hover {
     transform: translateY(-5px);
+    color: #222;
 }
 
 .feature-card i {
     font-size: 2.2rem;
-    border: 1px solid #6d3526;
+    border: 1px solid #e7c5bb;
     padding: 0.5rem;
     border-radius: 50%;
-    color: #6d3526;
+    color: #e7c5bbda;
     margin-bottom: 15px;
     display: inline-flex;
     align-items: center;
@@ -194,7 +198,7 @@ h2 {
 
 .feature-card h3 {
     font-size: 1.2rem;
-    color: #6d3526;
+    color: #e7c5bb;
     margin-bottom: 8px;
     /* أو الخط الرئيسي الذي اخترته */
 }
@@ -203,6 +207,8 @@ h2 {
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.5;
+    color: #e7c5bb8a;
+
 }
 
 /*=====================*/
@@ -357,7 +363,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     background: #fdfaf9;
-    border: 1px solid #6d3526;
+    border: 5px solid #6d3526;
     border-left: none;
     border-right: none;
     margin-bottom: 50px;
@@ -376,13 +382,6 @@ h2 {
 
 .order a i {
     padding: 0 1rem;
-}
-
-
-.order a:hover {
-    padding: 1rem 2.5rem;
-    background: #472319;
-
 }
 
 footer p {
@@ -521,7 +520,7 @@ footer p {
 
     .gallery-item img {
         max-height: 100%;
-        width: 100% ;
+        width: 100%;
         padding: 0;
         margin: 0;
 
@@ -655,3 +654,70 @@ footer p {
         padding: 14px;
     }
 }
+
+.gallery-item .overlay {
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: linear-gradient(to top, rgba(40, 20, 15, .85), transparent 60%);
+}
+
+.gallery-item .overlay h3 {
+    margin-bottom: .3rem;
+}
+
+.order a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(71, 35, 25, .25);
+    background: #472319;
+}
+
+.wa-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    font-size: 1.8rem;
+    color: #fff;
+    background: #472319;
+    border-radius: 50%;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .25);
+    z-index: 50;
+    transition: transform .2s;
+    text-decoration: none;
+}
+
+.wa-float:hover {
+    transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+.js .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .6s, transform .6s;
+}
+
+.js .reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .js .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+.feature-card, .openion { transition: transform .3s ease, opacity .6s; }
